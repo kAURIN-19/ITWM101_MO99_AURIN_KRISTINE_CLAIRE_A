@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adobong Manok</title>
+    <link rel="icon" href=".jpg" />
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            height: 80px;
+            width: 100%;
+            background-color: #c0392b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 3px solid #922b21;
+        }
+
+        
+        header a {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            border: 2px solid transparent;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        header a:hover {
+            background-color: #922b21;
+            border-color: white;
+        }
+
+        
+        section {
+            border: 2px solid #c0392b;
+            background-color: #fbeee6;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 8px;
+        }
+
+        
+        #recipe h2,
+        #cooking-instruction h2,
+        #restaurants h2 {
+            text-align: center;
+            color: #c0392b;
+            margin-top: 0;
+        }
+
+        
+        #recipe ul {
+            list-style-type: square;
+            margin-left: 1.5em;
+        }
+
+        
+        #cooking-instruction ol {
+            margin-left: 1.5em;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #c0392b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        
+        footer {
+            height: 100px;
+            width: 100%;
+            background-color: #c0392b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            border-top: 4px solid #922b21;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fdebd0;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#recipe" title="Go to Recipe">Recipe</a>
+        <a href="#cooking-instruction" title="Go to Cooking Instruction">Cooking Instruction</a>
+        <a href="#restaurants" title="Go to Restaurants">Restaurants</a>
+    </header>
+
+    <section id="description">
+        <h1 style="color:#c0392b; text-align:center;">Adobong Manok</h1>
+        <p><strong>Adobong Manok</strong> is one of the most iconic Filipino dishes, beloved for its savory, tangy, and
+            slightly sweet flavor profile. It is a type of chicken stew cooked in vinegar, soy sauce, garlic, bay
+            leaves, and black peppercorns. This dish is a staple in Filipino households and can be served with steamed
+            rice for a comforting meal. The process of simmering the chicken in the flavorful marinade allows it to
+            become tender and juicy, making it a timeless classic in Filipino cuisine.</p>
+    </section>
+
+    <section id="recipe">
+        <h2>Recipe Ingredients</h2>
+        <ul>
+            <li>1 kg chicken, cut into serving pieces</li>
+            <li>1/2 cup soy sauce</li>
+            <li>1/2 cup vinegar</li>
+            <li>1 head garlic, peeled and crushed</li>
+            <li>2 bay leaves</li>
+            <li>1 teaspoon whole black peppercorns</li>
+            <li>1 medium onion, sliced</li>
+            <li>1 cup water</li>
+            <li>2 tablespoons cooking oil</li>
+            <li>Salt to taste</li>
+            <li>Optional: 1 teaspoon sugar</li>
+        </ul>
+    </section>
+
+    <section id="cooking-instruction">
+        <h2>Cooking Instructions</h2>
+        <ol>
+            <li>In a bowl, combine chicken, soy sauce, vinegar, crushed garlic, bay leaves, and black peppercorns.
+                Marinate for at least 30 minutes.</li>
+            <li>Heat cooking oil in a pan over medium heat. Sauté the sliced onions until translucent.</li>
+            <li>Add the marinated chicken pieces, saving the marinade. Brown the chicken on all sides.</li>
+            <li>Pour in the reserved marinade along with 1 cup of water into the pan.</li>
+            <li>Bring to a boil, then lower the heat to simmer. Cover and cook for 30 to 40 minutes or until chicken is
+                tender.</li>
+            <li>If desired, add sugar to balance the taste and salt if necessary.</li>
+            <li>Continue cooking uncovered for a few minutes to reduce the sauce to your preferred thickness.</li>
+            <li>Remove bay leaves before serving.</li>
+            <li>Serve hot with steamed white rice.</li>
+        </ol>
+    </section>
+
+    <section id="restaurants">
+        <h2>Restaurants Offering Adobong Manok</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Restaurant</th>
+                    <th>Location</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Casa Reyes Bistro Filipino</td>
+                    <td>Makati City, Metro Manila</td>
+                    <td>(+63) 2 8938 6840</td>
+                </tr>
+                <tr>
+                    <td>Ristorante Delle Mitre</td>
+                    <td>Quezon City, Metro Manila</td>
+                    <td>(+63) 2 8373 5568</td>
+                </tr>
+                <tr>
+                    <td>Vikings Luxury Buffet</td>
+                    <td>Bonifacio Global City, Taguig</td>
+                    <td>(+63) 917 834 0235</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Reference:
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer">W3Schools
+                HTML Tutorial (2025)</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+AURIN
+prelimexam.html
