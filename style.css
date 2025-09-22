@@ -1,0 +1,329 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ffffff; /* White background */
+  color: #000; /* Default text black */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background: #2d2929; /* Light navbar */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(42, 40, 40, 0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+}
+
+.logo span {
+  color: lch(80.96% 44.49 199.24); /* Highlight */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background-color: lch(80.96% 44.49 199.24); /* Highlight background */
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 5px #bbb;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.nav-links a:active {
+  background-color: #333;
+  box-shadow: 0 3px #999;
+  transform: translateY(4px);
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 120px 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Text content */
+.text-content h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.text-content h1 span {
+  color: lch(80.96% 44.49 199.24);
+}
+
+.text-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.text-content h2 span {
+  color: lch(80.96% 44.49 199.24);
+}
+
+.text-content p {
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Animated Button */
+.btn {
+  background: lch(80.96% 44.49 199.24);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px #bbb;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #333;
+  box-shadow: 0 3px #999;
+  transform: translateY(4px);
+}
+
+/* Typing animation */
+.typing {
+  border-right: 2px solid lch(80.96% 44.49 199.24);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 4s steps(20, end) infinite alternate, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 13ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Profile Image */
+.image-box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid lch(80.96% 44.49 199.24);
+  box-shadow: 0 0 50px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: lch(80.96% 44.49 199.24);
+  outline: none;
+}
+
+form button {
+  background: lch(80.96% 44.49 199.24);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #000;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #2d2929;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(245, 244, 244, 0.915);
+}
+
+footer p {
+  color: #f8f6f6;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  font-size: 16px;
+  font-weight: 500;
+  color: lch(80.96% 44.49 199.24);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Contact page center */
+.contact-section {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-section form {
+  margin: 0 auto;
+}
+
+/* Skills Cards */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.skill-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.card-front {
+  background: lch(80.96% 44.49 199.24);
+  color: #fff;
+}
+
+.card-back {
+  background: #f0f0f0;
+  color: #000;
+  transform: rotateY(180deg);
+}
